@@ -1,0 +1,5 @@
+Rails.application.routes.draw do
+  root 'static_page#index'
+
+  resources :drumkits, only: [:index]
+end
